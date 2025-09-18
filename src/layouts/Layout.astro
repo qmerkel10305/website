@@ -4,19 +4,66 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Quinn Merkel</title>
 	</head>
+	
 	<body>
+		<!-- Navigation bar -->
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#internship_research">Internship & Research Interest</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
 		<slot />
+		<p id="copyright"> &copy; 2025 Quinn Merkel </p>
 	</body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+ html,
+ body {
+	 font-family:Verdana, Geneva, Tahoma, sans-serif;
+	 color: #1f1f1f;
+	 margin: 0;
+	 width: 100%;
+	 height: 100%;
+ }
+
+
+ .nav-bar {
+	 width: 100%;
+	 background: #000a76;
+	 padding: 1rem 0;
+ }
+ .nav-bar ul {
+	 list-style: none;
+	 display: flex;
+	 margin: 0;
+	 padding: 0;
+	 justify-content: left;
+ }
+ .nav-bar li {
+	 margin: 0 2rem;
+ }
+ .nav-bar a {
+	 font-family:Verdana, Geneva, Tahoma, sans-serif;
+	 color: #d2d2d2;
+	 text-decoration: none;
+	 font-weight: bold;
+	 font-size: 1.1rem;
+	 transition: color 0.2s;
+ }
+ .nav-bar a:hover {
+	 color: #ffd700;
+ }
+
+ #copyright {
+	font-size: 0.7rem;
+	color: #1f1f1f52
+ }
 </style>

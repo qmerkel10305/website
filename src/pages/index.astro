@@ -1,11 +1,85 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import merkelImg from '../assets/merkel.jpg';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main>
+		<div id="about">
+			<div id="basic_info">
+				<h1 id="name">
+					Quinn
+					<br>
+					<span id="last_name">Merkel</span>
+				</h1>
+
+				<p id="contact_info">
+					Student <br>
+					North Carolina State University <br>
+					Computer Science Engineering; Cybersecurity Focus <br>
+					<a href="mailto:qemerkel@ncsu.edu">qemerkel@ncsu.edu</a> <br>
+					<a href="mailto:quinnmerkel@gmail.com">quinnmerkel@gmail.com</a> <br>
+					Github: <a href="https://github.com/qmerkel10305">github.com/qmerkel10305</a> <br>
+				</p>
+			</div>
+			<img id="profile_img" src={merkelImg.src} alt="Profile Picture">
+		</div>
+		<p>
+			I am a Student at NC State, studying for a degree in Computer Science Engineering, focusing in Cybersecurity. I am a member of the <a href="https://aerialroboticsclub.com" target="_blank">Aerial Robotics Club</a>, and am currently serving as its Software Subteam Lead. As a member of ARC, I have designed backend systems for taking, processing, storing, and displaying images taken by our drone. In addition, I have served as Webmaster, and during that time used the HUGO framework to update and maintain the club's website. 
+		</p>
+		
+		<h1 id="internship_research">
+			Internship & Research Interest
+		</h2>
+
+		<p>
+			I am currently a Junior, expecting to graduate in Spring of 2027. I am looking for any internship or research opportunities related to Cybersecurity. I have experience with Java, Python, and C, as well as penetration testing, web development, and network security through classes, clubs, and personal projects. 
+		</p>
+
+		<h1 id="contact">
+			Contact Me
+		</h1>
+
+		<p>
+			Primary Email: <a href="mailto:quinnmerkel@gmail.com">quinnmerkel@gmail.com</a> <br>
+			School Email: <a href="mailto:qemerkel@ncsu.edu">qemerkel@ncsu.edu</a>
+			<a href="https://github.com/qmerkel10305">Github</a>
+			<a href="https://www.linkedin.com/in/quinn-merkel/">LinkedIn</a>
+		</p>
+	</main>
 </Layout>
+
+<style>
+	main {
+		width: 50vw;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-weight:normal;
+	}
+	
+	#last_name {
+		font-weight:bold;
+	}
+
+
+	#about {
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+	}
+
+	#profile_img {
+		width: 17rem;
+	}
+
+	#contact_info {
+		line-height:1.5rem;
+	}
+	
+</style>
