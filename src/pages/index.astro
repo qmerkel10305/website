@@ -9,29 +9,30 @@ import merkelImg from '../assets/merkel.jpg';
 
 <Layout>
 	<main>
-		<div id="about">
-			<div id="basic_info">
-				<h1 id="name">
-					Quinn
-					<br>
-					<span id="last_name">Merkel</span>
-				</h1>
+		<section id="about">
+			<div id="name_photo">
+				<div id="basic_info">
+					<h1 id="name">
+						Quinn
+						<br>
+						<span id="last_name">Merkel</span>
+					</h1>
 
-				<p id="contact_info">
-					Student <br>
-					North Carolina State University <br>
-					Computer Science Engineering; Cybersecurity Focus <br>
-					<a href="mailto:qemerkel@ncsu.edu">qemerkel@ncsu.edu</a> <br>
-					<a href="mailto:quinnmerkel@gmail.com">quinnmerkel@gmail.com</a> <br>
-					Github: <a href="https://github.com/qmerkel10305">github.com/qmerkel10305</a> <br>
-				</p>
+					<p id="contact_info">
+						Student <br>
+						North Carolina State University <br>
+						Computer Science Engineering; Cybersecurity Focus <br>
+						<a href="mailto:qemerkel@ncsu.edu">qemerkel@ncsu.edu</a> <br>
+						<a href="mailto:quinnmerkel@gmail.com">quinnmerkel@gmail.com</a> <br> <br>
+					</p>
+				</div>
+				<img id="profile_img" src={merkelImg.src} alt="Profile Picture">
 			</div>
-			<img id="profile_img" src={merkelImg.src} alt="Profile Picture">
-		</div>
-		<p>
-			I am a Student at NC State, studying for a degree in Computer Science Engineering, focusing in Cybersecurity. I am a member of the <a href="https://aerialroboticsclub.com" target="_blank">Aerial Robotics Club</a>, and am currently serving as its Software Subteam Lead. As a member of ARC, I have designed backend systems for taking, processing, storing, and displaying images taken by our drone. In addition, I have served as Webmaster, and during that time used the HUGO framework to update and maintain the club's website. 
-		</p>
-		
+			<p>
+				I am a Student at NC State, studying for a degree in Computer Science Engineering, focusing in Cybersecurity. I am a member of the <a href="https://aerialroboticsclub.com" target="_blank">Aerial Robotics Club</a>, and am currently serving as its Software Subteam Lead. As a member of ARC, I have designed backend systems for taking, processing, storing, and displaying images taken by our drone. In addition, I have served as Webmaster, and during that time used the HUGO framework to update and maintain the club's website. 
+			</p>
+		</section>
+
 		<!-- Internships and Research -->
 		<section id="internship_research">
 			<h1>
@@ -92,31 +93,32 @@ import merkelImg from '../assets/merkel.jpg';
 			</ul>
 		</section>
 
-		<!-- Contact Info -->
-		<section id="contact">
-			<h1>
-				Contact Me
-			</h1>
-
-			<p>
-				Primary Email: <a href="mailto:quinnmerkel@gmail.com">quinnmerkel@gmail.com</a> <br>
-				School Email: <a href="mailto:qemerkel@ncsu.edu">qemerkel@ncsu.edu</a> <br>
-				<a href="https://github.com/qmerkel10305">Github</a> <br>
-				<a href="https://www.linkedin.com/in/quinn-merkel/">LinkedIn</a> <br>
-			</p>
-		</section>
-
+		<!-- Activities & Leadership -->
 		<section id="leadership">
 			<h1>Activities & Leadership</h1>
 			<ul>
 				<li>Aerial Robotics Club</li>
-					<ul>
-						<li>Software Subteam Lead, Aerial Robotics Club</li>
-						<li>Webmaster, Aerial Robotics Club</li>
-					</ul>
-				<li>Eagle Scout</li>
+				<ul>
+					<li>Software Subteam Lead, Aerial Robotics Club</li>
+				</ul>
+			</section>
+
+			<!-- Contact Info -->
+			<section id="contact">
+				<h1>
+					Contact Me
+				</h1>
+	
+				<p>
+					Primary Email: <a href="mailto:quinnmerkel@gmail.com">quinnmerkel@gmail.com</a> <br>
+					School Email: <a href="mailto:qemerkel@ncsu.edu">qemerkel@ncsu.edu</a> <br>
+					<a href="https://github.com/qmerkel10305">Github</a> <br>
+					<a href="https://www.linkedin.com/in/quinn-merkel/">LinkedIn</a> <br>
+				</p>
+			</section>
+				<li>Webmaster, Aerial Robotics Club</li>
 			</ul>
-		</section>
+		<li>Eagle Scout</li>
 	</main>
 </Layout>
 
@@ -135,7 +137,7 @@ import merkelImg from '../assets/merkel.jpg';
 	}
 
 
-	#about {
+	#name_photo {
 		display: flex;
 		align-items: flex-start;
 		gap: 2rem;
