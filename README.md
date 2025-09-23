@@ -6,7 +6,9 @@
 ## Deployment
 - For development: `npm run dev`
 - For deployment on AWS (must have AWS CLI installed and configured)
-    ```
-    $ npm run build
-    $ aws s3 sync dist/ s3://quinn-merkel
-    ```
+    - Automatically deploys on push to Github
+    - Manual deployment:
+        ```
+        $ npm run build
+        $ aws s3 sync dist/ s3://quinn-merkel --delete
+        ```
