@@ -100,7 +100,10 @@ import merkelImg from '../assets/merkel.jpg';
 				<li>Aerial Robotics Club</li>
 				<ul>
 					<li>Software Subteam Lead, Aerial Robotics Club</li>
+					<li>Webmaster, Aerial Robotics Club</li>
 				</ul>
+				<li>Eagle Scout</li>
+			</ul>
 			</section>
 
 			<!-- Contact Info -->
@@ -116,11 +119,31 @@ import merkelImg from '../assets/merkel.jpg';
 					<a href="https://www.linkedin.com/in/quinn-merkel/">LinkedIn</a> <br>
 				</p>
 			</section>
-				<li>Webmaster, Aerial Robotics Club</li>
-			</ul>
-		<li>Eagle Scout</li>
 	</main>
 </Layout>
+
+<script>
+	// Wait for the page to load
+	window.addEventListener('DOMContentLoaded', function() {
+		const targetDiv = document.getElementById('basic_info'); // The div to match
+		const image = document.getElementById('profile_img');    // The image to resize
+		
+		// Function to match heights
+		function matchHeights() {
+			if (targetDiv && image) {
+				const divHeight = targetDiv.offsetHeight;
+				image.style.height = divHeight + 'px';
+				image.style.objectFit = 'contain'; // Maintain aspect ratio without cropping
+			}
+		}
+		
+		// Match heights initially
+		matchHeights();
+		
+		// Re-match if window is resized
+		window.addEventListener('resize', matchHeights);
+	});
+</script>
 
 <style>
 	main {
